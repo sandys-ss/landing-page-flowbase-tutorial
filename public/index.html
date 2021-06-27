@@ -5,17 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <title>SaaS Landing Page</title>
 </head>
 
 <body>
+    <!-- Navigation -->
     <nav class="max-w-full mx-auto">
-        <div class="grid grid-cols-3 gap-ggrid mx-mgrid mt-mtop h-navheight">
+        <!-- Grid -->
+        <div
+            class="grid md:grid-cols-3 xs:grid-cols-2 gap-ggrid xl:mx-mgrid lg:mx-24 md:mx-16 sm:mx-16 xs:mx-10 mt-mtop h-navheight">
+            <!-- Logo -->
             <div class="m-0 flex items-center">
-                <img src="/public/assets/Logo Color.svg" alt="ipsum">
+                <img class="md:h-6 lg:h-8 xl:h-10 xs:h-6" src="/public/assets/Logo Color.svg" alt="ipsum">
             </div>
-            <div class="flex justify-between items-center font-head text-freguler">
+            <!-- Mobile Menu Button -->
+            <div class="flex justify-end items-center md:hidden">
+                <button class="mobile-menu-button">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Primary nav -->
+            <div class="flex justify-between items-center font-head text-freguler md:inline-flex xs:hidden">
                 <a href="#"
                     class="text-grey hover:text-black hover:border-blue pb-pbottom border-b-2 border-transparent">Home</a>
                 <a href="#"
@@ -25,14 +43,30 @@
                 <a href="#"
                     class="text-grey hover:text-black hover:border-blue pb-pbottom border-b-2 border-transparent">Blog</a>
             </div>
-            <div class="flex justify-end font-head text-fbutton">
-                <a href="#" class="bg-orange text-white px-navheight py-mbutton rounded-large">Get Started</a>
+            <!-- Secondary nav -->
+            <div class="flex justify-end items-center font-head text-fbutton md:inline-flex xs:hidden">
+                <a href="#"
+                    class="bg-orange hover:bg-darkorange text-white xl:px-navheight lg:px-7 md:px-4 lg:py-mbutton md:py-3.5 rounded-large">Get
+                    Started</a>
             </div>
+
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu bg-white text-sm font-head sm:mx-16 xs:mx-10 md:hidden hidden">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-300">Home</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-300">Features</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-300">Pricing</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-300">Blog</a>
+            <button class="block px-4 py-2">
+                <a href="#" class="py-1 px-1 bg-orange hover:bg-darkorange rounded-large">Get Started</a>
+            </button>
         </div>
 
 
-
-        <div class="grid grid-cols-12 gap-ggrid mx-mgrid mt-mtop">
+        <!-- Grid Helper -->
+        <div
+            class="grid grid-cols-12 xl:gap-ggrid lg:gap-7 md:gap-5 sm:gap-3 xs:gap-1 xl:mx-mgrid lg:mx-24 sm:mx-20 xs:mx-10 mt-mtop h-navheight">
             <div class="text-white bg-black">1</div>
             <div class="text-white bg-blue">2</div>
             <div class="text-white bg-orange">3</div>
@@ -48,15 +82,7 @@
         </div>
     </nav>
 
-    <!--
-    <h1 class="text-white bg-black text-lg font-head m-mtop text-f15p">SaaS Landing Page</h1>
-    <h1 class="text-black bg-white text-lg font-body">SaaS Landing Page</h1>
-    <h1 class="text-white bg-blue text-lg">SaaS Landing Page</h1>
-    <h1 class="text-white bg-orange text-lg">SaaS Landing Page</h1>
-    <h1 class="text-white bg-grey text-lg">SaaS Landing Page</h1>
-    <h1 class="text-black bg-transparent text-lg">SaaS Landing Page</h1>
-    <h1 class="text-black bg-purple-900 text-lg">SaaS Landing Page</h1>
-    -->
+    <script src="js/app.js"></script>
 </body>
 
 </html>

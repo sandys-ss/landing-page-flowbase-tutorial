@@ -1,8 +1,11 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+
       fontFamily: {
         head: ['"DM Sans"'],
         body: ['Mulish']
@@ -14,6 +17,7 @@ module.exports = {
         white: '#FFFFFF',
         blue: '#5454D4',
         orange: '#FF7143',
+        darkorange: '#FE3E00',
         grey: '#696871'
       },
 
@@ -42,7 +46,13 @@ module.exports = {
 
       borderRadius: {
         large: '10px',
-      }
+      },
+    },
+
+    screens: {
+      'xs': '320px',
+      ...defaultTheme.screens,
+      // => @media (min-width: 320px) { ... }
     },
   },
   variants: {
