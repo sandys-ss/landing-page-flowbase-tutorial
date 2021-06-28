@@ -26,7 +26,9 @@ module.exports = {
         mgrid: '185px',
         navheight: '60px',
         mbutton: '19px',
-        pbottom: '10px'
+        pbottom: '10px',
+        msection: '100px',
+        hero: '644px'
       },
 
       fontSize: {
