@@ -50,12 +50,12 @@
                     Started</a>
             </div>
             <!-- Mobile menu -->
-            <div class="col-span-3 mobile-menu bg-white text-sm font-head font md:hidden hidden">
+            <div class="col-span-3 mobile-menu bg-white text-sm font-head font md:hidden hidden z-10">
                 <a href="#" class="block px-4 py-2 hover:bg-gray-200">Home</a>
                 <a href="#" class="block px-4 py-2 hover:bg-gray-200">Features</a>
                 <a href="#" class="block px-4 py-2 hover:bg-gray-200">Pricing</a>
                 <a href="#" class="block px-4 py-2 hover:bg-gray-200">Blog</a>
-                <button class="block px-4 py-2">
+                <button class="block px-4 py-2 mb-4">
                     <a href="#" class="py-1 px-1 bg-orange hover:bg-darkorange rounded-large">Get Started</a>
                 </button>
             </div>
@@ -63,45 +63,46 @@
     </nav>
 
     <!-- Section Hero -->
-    <section class="mt-msection mx-mgrid h-hero relative">
-        <div class="grid grid-cols-2 gap-ggrid m-auto">
-            <div class="mt-mtop2">
-                <h1 class="text-fonthero font-head">Grow your subscription business</h1>
-                <p class="text-fontsecondhero font-body font-normal w-shero mt-mtop mb-mbottom">
+    <section class="lg:mt-msection sm:mt-10 h-hero xl:mx-mgrid lg:mx-24 md:mx-16 sm:mx-16 xs:mx-10">
+        <div class="grid grid-flow-col md:grid-cols-12 gap-ggrid xs:grid-rows-2">
+            <!-- Mobile view - image -->
+            <div class="flex flex-col justify-items-center items-center md:hidden xs:col-span-12">
+                <img class="w-96" src="/public/assets/Hero 3D.png" alt="3D Hero">
+            </div>
+            <!-- Normal view -->
+            <div class="md:flex md:flex-col md:mt-mtop2 md:col-span-5 xs:col-span-12 xs:-mt-6 xs:block">
+                <h1 class="xl:text-fonthero lg:text-6xl xs:text-5xl font-head font-bold">
+                    Grow your subscription business
+                </h1>
+                <p class="text-fontsecondhero font-body font-normal lg:w-shero sm:w-96 mt-mtop mb-mbottom text-grey">
                     Outcome-centered products that reduce churn,
                     optimize pricing, and grow your subscription business
                     end-to-end.</p>
-                <button>
-                    <a href="#"
-                        class="bg-blue hover:bg-darkblue text-white xl:px-navheight lg:px-7 md:px-4 lg:py-mbutton md:py-3.5 rounded-large">Get
-                        Started</a>
-                </button>
+                <div class="flex">
+                    <button class="mr-10">
+                        <a href="#"
+                            class="bg-blue hover:bg-darkblue text-white xl:px-navheight lg:px-7 sm:px-4 lg:py-mbutton sm:py-3.5 rounded-large">Get
+                            Started</a>
+                    </button>
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M59.5 30C59.5 46.2924 46.2924 59.5 30 59.5C13.7076 59.5 0.5 46.2924 0.5 30C0.5 13.7076 13.7076 0.5 30 0.5C46.2924 0.5 59.5 13.7076 59.5 30Z"
+                            fill="white" stroke="#E7E7E7" />
+                        <path d="M30 18.75V41.25" stroke="#19191B" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M19.5 30.75L30 41.25L40.5 30.75" stroke="#19191B" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </div>
             </div>
-            <div class="">
-                <img width="644" height="610" src="/public/assets/Hero 3D.png" alt="3D Hero">
+            <div class="relative md:col-span-7 md:col-start-7 -mr-16 xs:hidden md:block">
+                <img class="absolute w-full" src="/public/assets/Hero 3D.png" alt="3D Hero">
             </div>
         </div>
     </section>
 
-    <!-- Section Grid -->
-    <section>
-        <!-- Grid Helper -->
-        <div
-            class="grid grid-cols-12 xl:gap-ggrid lg:gap-7 md:gap-5 sm:gap-3 xs:gap-1 xl:mx-mgrid lg:mx-24 sm:mx-20 xs:mx-10 mt-mtop h-navheight">
-            <div class="text-white bg-black">1</div>
-            <div class="text-white bg-blue">2</div>
-            <div class="text-white bg-orange">3</div>
-            <div class="text-white bg-black">4</div>
-            <div class="text-white bg-blue">5</div>
-            <div class="text-white bg-orange">6</div>
-            <div class="text-white bg-black">7</div>
-            <div class="text-white bg-blue">8</div>
-            <div class="text-white bg-orange">9</div>
-            <div class="text-white bg-black">10</div>
-            <div class="text-white bg-blue">11</div>
-            <div class="text-white bg-orange">12</div>
-        </div>
-    </section>
+
 
 
 
