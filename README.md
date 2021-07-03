@@ -1,4 +1,4 @@
-# landing-page-flowbase-tutorial
+# Landing-Page-Flowbase-Tutorial
 
 File ini berisi landing page yang dibuat dari HTML & CSS (Tailwindcss) + Simple Javascript.
 
