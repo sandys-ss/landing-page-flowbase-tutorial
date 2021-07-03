@@ -16,6 +16,7 @@ module.exports = {
         black: '#19191B',
         white: '#FFFFFF',
         blue: '#5454D4',
+        darkblue: '#0303E3',
         orange: '#FF7143',
         darkorange: '#FE3E00',
         grey: '#696871'
@@ -23,12 +24,14 @@ module.exports = {
 
       spacing: {
         mtop: '30px',
+        mtop2: '92px',
         mgrid: '185px',
         navheight: '60px',
         mbutton: '19px',
         pbottom: '10px',
         msection: '100px',
-        hero: '644px'
+        hero: '644px',
+        mbottom: '50px',
       },
 
       fontSize: {
@@ -40,6 +43,14 @@ module.exports = {
           letterSpacing: '-0.53px',
           lineHeight: '22px',
         }],
+        fonthero: ['80px', {
+          letterSpacing: '-2.5px',
+          lineHeight: '77px',
+        }],
+        fontsecondhero: ['20px', {
+          letterSpacing: '-0.63px',
+          lineHeight: '30px',
+        }],
       },
 
       gap: {
@@ -48,6 +59,10 @@ module.exports = {
 
       borderRadius: {
         large: '10px',
+      },
+
+      width: {
+        shero: '459px',
       },
     },
 
