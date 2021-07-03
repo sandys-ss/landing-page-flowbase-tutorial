@@ -9,6 +9,7 @@ Landing page ini juga dilengkapi dengan implementasi responsive view mulai dari 
 Panduan responsive view :
 
 xs : > 320px
+
 sm : > 640px
 md : > 768px
 lg : > 1024px
