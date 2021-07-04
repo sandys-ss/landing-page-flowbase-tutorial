@@ -32,6 +32,7 @@ module.exports = {
         msection: '100px',
         hero: '644px',
         mbottom: '50px',
+        98: '459px',
       },
 
       fontSize: {
