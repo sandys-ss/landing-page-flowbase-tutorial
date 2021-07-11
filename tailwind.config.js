@@ -64,6 +64,7 @@ module.exports = {
 
       width: {
         shero: '459px',
+        560: '560px',
       },
     },
 
